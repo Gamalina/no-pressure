@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 const App = ({ Component, pageProps }: AppProps) => {
   const { asPath } = useRouter();
 
-  const description = `Welcome to No Pressure - a community built on enjoying World of Warcraft: Dragonflight together, with no pressure`;
+  const description = `Welcome to No Pressure - a community built on enjoying World of Warcraft: The War Within together, with no pressure`;
   const img = "https://no-pressure.eu/images/og.png";
   const domain = "https://no-pressure.eu";
   const url = `${domain}${asPath}`;
