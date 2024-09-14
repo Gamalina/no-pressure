@@ -5,6 +5,7 @@ import Head from "next/head";
 import HeroBanner from "@/components/HeroBanner";
 import Nav from "@/components/Nav";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const App = ({ Component, pageProps }: AppProps) => {
   const { asPath } = useRouter();
@@ -16,10 +17,10 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <link
-          href="/images/no-pressure-logo-icon.png"
-          rel="icon"
-          type="image/svg+xml"
+        <Link 
+        href="/images/no-pressure-logo-icon.png" 
+        rel="icon" 
+        type="image/svg+xml" 
         />
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
